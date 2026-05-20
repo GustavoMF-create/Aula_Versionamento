@@ -17,6 +17,12 @@ def divisao(a,b):
 def subtracao(a,b):
     return a - b
 
+def exponenciacao(a,b):
+    return a**b
+
+def porcet(a,b):
+    return(a*(b/100))
+
 
 while True:
     print("\n======== Calculadora =========")   
@@ -24,6 +30,8 @@ while True:
     print("2-Multiplicação")
     print("3-Divisão")
     print("4-Subtração")
+    print("5-Exponenciação")
+    print("6-Porcentagem")
     print("0-Sair")
     
     opcao = int(input("Escolha o que deseja fazer: "))
@@ -46,4 +54,10 @@ while True:
     elif opcao == 4:
         resultado = subtracao(num1,num2)
         print(f"Resultado = {resultado}")
-    
+    elif opcao == 5:
+        resultado = exponenciacao(num1,num2)
+        print(f"Resultado = {resultado}")
+    elif opcao == 6:
+        resultado = porcet(num1,num2)
+        print(f"Resultado = {resultado}")
+
